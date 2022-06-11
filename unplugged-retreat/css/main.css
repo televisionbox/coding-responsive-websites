@@ -141,14 +141,11 @@ img {
     margin: 50px 0;
 }
 
-.content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-}
 
  /* -------------------- Base Header - Footer Styles -------------------- */
 header,
 footer {
+    background-color: #202322;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,26 +156,37 @@ header {
     padding: 15px 0;
 }
 
-.header content-wrapper{
+.header .content-wrapper{
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .header-divider {
+    background: #3a3a3a; 
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
 }
 
 header nav {
+    width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    width: 60%;
 }
 
 .header nav ul{
@@ -189,6 +197,7 @@ header nav {
 }
 
 footer {
+    text-align: center;
     flex-direction: column;
 }
 
@@ -196,22 +205,22 @@ footer p {
     margin: 0;
 }
 
-.footer content-wrapper {
+.footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
 }
 
-.footer contact {
+.footer .contact {
     margin-bottom: 50px;
 }
 
-.footer social-icons{
+.footer .social-icons{
     display: flex;
     justify-content: space-around;
     align-items:  center;
 }
 
-.footer social p{
+.footer .social-icons p{
     display: flex;
     justify-content: center;
     align-items:  center;
@@ -224,6 +233,10 @@ footer .copyright {
  /* -------------------- Mobile - Homepage -------------------- */
 
 hero-area {
+    background: url(../img/unplugged-retreat.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -272,6 +285,9 @@ input[type=button] {
 }
 
 .features {
+    background: url('../img/unplugged-retreat-features.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -286,7 +302,7 @@ input[type=button] {
     margin: 30px 0;
 }
 
-.features features-items{
+.features .features-items{
     display: flex;
     justify-content: center;
     align-items: center;
