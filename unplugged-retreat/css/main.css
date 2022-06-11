@@ -131,6 +131,10 @@ p {
 address {
     font-style: normal;
 }
+
+img {
+    width: 100%;
+}
  
 .content-wrapper {
     width: 90%;
