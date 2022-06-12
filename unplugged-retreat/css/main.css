@@ -127,6 +127,14 @@ p {
     font-size: .875em;
     line-height: 1.285;
 }
+
+img {
+ width: 100%;
+}
+ 
+figure {
+ margin: 0;
+}
   
 address {
     font-style: normal;
@@ -189,7 +197,7 @@ header nav {
     flex-flow: row wrap;
 }
 
-.header nav ul{
+header nav ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -205,22 +213,22 @@ footer p {
     margin: 0;
 }
 
-.footer .content-wrapper {
+footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
 }
 
-.footer .contact {
+footer .contact {
     margin-bottom: 50px;
 }
 
-.footer .social-icons{
+footer .social-icons{
     display: flex;
     justify-content: space-around;
     align-items:  center;
 }
 
-.footer .social-icons p{
+footer .social-icons p{
     display: flex;
     justify-content: center;
     align-items:  center;
@@ -232,7 +240,7 @@ footer .copyright {
 
  /* -------------------- Mobile - Homepage -------------------- */
 
-hero-area {
+.hero-area {
     background: url(../img/unplugged-retreat.jpg);
     background-size: cover;
     background-position: center;
@@ -343,6 +351,22 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 125%; 
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+}
+
 .contact-section {
   background-color: #2a423a;
   display: flex;
@@ -354,6 +378,8 @@ input[type=button] {
 .contact-content p {
   margin: 0;
 }
+
+
 
  /* -------------------- FAQ -------------------- */
 
