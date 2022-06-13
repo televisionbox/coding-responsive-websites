@@ -103,20 +103,24 @@ body {
 ul, 
 ol {
     list-style-type: none;
-    margin: 0;
-    /*padding: 0;*/
 }
  
 a {
     color: #e2e3ed;
     text-decoration: none;
 }
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size:  2.25em;
+    line-height: 2.25em;
+    color: white;
+}
  
 h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.875em;
-    margin: 0;
 }
  
 h3, 
@@ -131,6 +135,13 @@ p {
     font-size: .875em;
     line-height: 1.285;
 }
+
+img {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
  
 figure {
     margin: 0;
@@ -140,9 +151,6 @@ address {
     font-style: normal;
 }
 
-img {
-    width: 100%;
-}
  
 .content-wrapper {
     width: 90%;
@@ -196,13 +204,13 @@ header nav {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    padding-right: 50px;
 }
 
 header nav ul{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin: 0;
 }
 
 header nav ul li {
@@ -237,7 +245,6 @@ footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items:  center;
-    background-color: #527158;
     border-radius: 50%;
 }
 
@@ -359,6 +366,18 @@ input[type=button] {
 
  /* -------------------- About Page -------------------- */
 
+.about-header a {
+    flex-basis: 70%;
+    margin: 0;
+}
+
+.about-logo {
+    width:  100%;
+}
+
+.about-ul {
+    margin:  0;
+}
 
 .mission {
   background-color: #527158;
@@ -396,9 +415,23 @@ input[type=button] {
   margin: 0;
 }
 
+.contact-section h2 {
+    margin: 0;
+}
+
 
 
  /* -------------------- FAQ -------------------- */
+
+.faq-header a {
+    flex-basis: 70%;
+    margin: 0;
+}
+
+.faq-ul {
+    justify-content: space-around;
+    margin: 0;
+}
 
 .faq {
     background-color: #527158;
@@ -530,45 +563,42 @@ h2 {
     line-height: 1.333;
   }
 
-h3 {
+h3, h4 {
     font-size: 1.5em;
     line-height: 1.25;
   }
 
+p {
+    font-size: .875em;
+}
+
 img {
-    width: 50%;
     float: left;
+    margin-right: 3em;
 }
 
 
 /* Tablet - Header */
- 
+
 header {
-    justify-content: space-around;
     padding: 33px 0;
+    justify-content: space-around;
 }
- 
+
 header .content-wrapper {
     width: 100%;
     justify-content: space-between;
 }
- 
+
 header figure {
-    width: 70%;
-  }
+    width: 30%;
+}
 
 header nav {
     width: 20%;
-}
- 
-header nav ul {
     justify-content: space-between;
-    padding: 1px;
 }
- 
-header nav ul li {
-    padding: 10px;
-}
+
 
 .header-divider {
     display: none;
@@ -627,9 +657,15 @@ aside .content-wrapper .form {
 .reviews article {
     display: flex;
     justify-content: space-between;
+    flex-flow: column wrap;
+}
+
+.reviews-items {
+    display: flex;
 }
 
 .reviews h2 {
+    margin-bottom: 25px;
     width: 85%;
 }
     
@@ -640,6 +676,10 @@ aside .content-wrapper .form {
 
 .reviews h3 {
     width: 75%;
+    margin: 0;
+}
+
+.reviews p {
     margin: 0;
 }
  
@@ -661,6 +701,7 @@ footer .contact {
 }
 
 footer h4 {
+    margin-top: 0;
     font-size:  1.5em;
     margin-bottom: 40px;
 }
@@ -681,6 +722,11 @@ footer .copyright {
 
   /* -------------------- Tablet - About Page -------------------- */
 
+.about-logo {
+    width:  50%;
+    justify-content: flex-start;
+}
+
 .mission-content {
     display: flex;
     justify-content: space-between;
@@ -689,6 +735,7 @@ footer .copyright {
 }
 
 .mission-content p {
+    align-self: flex-start;
     width: 45%;
 }
 
@@ -706,11 +753,16 @@ footer .copyright {
     align-items: flex-start;
 }
 
+.contact-content h2 {
+    font-size: 2.25em;
+}
+
 .contact-content h4 {
     font-size: 1.5em;
 }
 
   /* -------------------- Tablet - FAQ -------------------- */
+
 
 header nav ul li {
     padding: 10px;
@@ -726,6 +778,7 @@ header nav ul li {
 
 .faq h2 {
     width: 100%;
+    font-size: 2em;
 }
 
 .faq h4,
