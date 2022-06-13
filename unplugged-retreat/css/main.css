@@ -104,7 +104,7 @@ ul,
 ol {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    /*padding: 0;*/
 }
  
 a {
@@ -196,6 +196,7 @@ header nav {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    padding-right: 50px;
 }
 
 header nav ul{
@@ -226,16 +227,18 @@ footer .contact {
     margin-bottom: 50px;
 }
 
-footer .social-icons{
+footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items:  center;
 }
 
-footer .social-icons p{
+footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items:  center;
+    background-color: #527158;
+    border-radius: 50%;
 }
 
 footer .social-icons p i {
@@ -406,7 +409,7 @@ input[type=button] {
 }
 
 .faq .content-wrapper{
-    margin: 50px 0;
+    margin: 50px 0 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -532,8 +535,13 @@ h3 {
     line-height: 1.25;
   }
 
+img {
+    width: 50%;
+    float: left;
+}
 
-/* Header */
+
+/* Tablet - Header */
  
 header {
     justify-content: space-around;
@@ -546,7 +554,7 @@ header .content-wrapper {
 }
  
 header figure {
-    width: 30%;
+    width: 70%;
   }
 
 header nav {
@@ -555,13 +563,18 @@ header nav {
  
 header nav ul {
     justify-content: space-between;
+    padding: 1px;
 }
  
+header nav ul li {
+    padding: 10px;
+}
+
 .header-divider {
     display: none;
 }
  
-/* Hero Area */
+/* Tablet - Hero Area */
 
 .hero-area {
     min-height: 600px;
@@ -573,7 +586,7 @@ header nav ul {
     margin: 0;
 }
  
-/* Aside */
+/* Tablet - Aside */
 aside .content-wrapper {
     margin: 50px 0;
     display: flex;
@@ -587,7 +600,7 @@ aside .content-wrapper .form {
     margin: 0;
 }
  
-/* Features */
+/* Tablet - Features */
 
 .features h2 {
     margin-bottom: 20px;
@@ -603,6 +616,7 @@ aside .content-wrapper .form {
  
 .features .features-item-description {
     width: 62%;
+    text-align: center;
 }
 
 .features i {
@@ -616,7 +630,7 @@ aside .content-wrapper .form {
 }
 
 .reviews h2 {
-    width: 85;
+    width: 85%;
 }
     
 .reviews article figure,
@@ -629,7 +643,7 @@ aside .content-wrapper .form {
     margin: 0;
 }
  
-/* Footer */
+/* Tablet - Footer */
 footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
@@ -662,9 +676,10 @@ footer .social-icons {
 
 footer .copyright {
     width: 100%;
+    text-align: center;
 }
 
-  /* -------------------- About Page -------------------- */
+  /* -------------------- Tablet - About Page -------------------- */
 
 .mission-content {
     display: flex;
@@ -695,7 +710,11 @@ footer .copyright {
     font-size: 1.5em;
 }
 
-  /* -------------------- FAQ -------------------- */
+  /* -------------------- Tablet - FAQ -------------------- */
+
+header nav ul li {
+    padding: 10px;
+}
 
 .faq .content-wrapper {
     justify-content: space-between;
@@ -724,6 +743,15 @@ footer .copyright {
     padding: 15px 0;
   }
 
+  header figure {
+    width: 30%;
+  }
+
+  img {
+    float: left;
+    margin-right: 3em;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
@@ -741,10 +769,13 @@ footer .copyright {
       font-size: 1.125em;
       line-height: 1.333;
   }
+
   /* Hero */
+
   .hero-area h1 {
     font-size: 3.75em;
     width: 80%;
+    margin-top: -50px;
 }
 
   /* Aside */
@@ -773,19 +804,19 @@ footer .copyright {
   
   /* Reviews */
 
+  .reviews article div {
+    width: 100%;
+  }
+
   .reviews h2 {
     padding-bottom: 50px; 
-  }
-  
-  .reviews article div {
-    width: 42%;
   }
 
   footer h4 {
     font-size: 1.875em;
   }
 
-  /* -------------------- About -------------------- */
+  /* -------------------- Desktop - About -------------------- */
 
   .map figure {
     padding-bottom: 37.5%;
@@ -801,7 +832,7 @@ footer .copyright {
     font-size: 1.875em;
   }
 
-  /* -------------------- FAQ -------------------- */
+  /* -------------------- Desktop - FAQ -------------------- */
 
   .faq h2 {
     width: 100%;
