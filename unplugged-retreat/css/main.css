@@ -596,7 +596,11 @@ header figure {
 
 header nav {
     width: 20%;
+}
+
+header nav ul {
     justify-content: space-between;
+    font-size: 1em;
 }
 
 
@@ -632,6 +636,10 @@ aside .content-wrapper .form {
  
 /* Tablet - Features */
 
+.features {
+    min-height: 860px;
+}
+
 .features h2 {
     margin-bottom: 20px;
 }
@@ -657,7 +665,6 @@ aside .content-wrapper .form {
 .reviews article {
     display: flex;
     justify-content: space-between;
-    flex-flow: column wrap;
 }
 
 .reviews-items {
@@ -665,7 +672,6 @@ aside .content-wrapper .form {
 }
 
 .reviews h2 {
-    margin-bottom: 25px;
     width: 85%;
 }
     
