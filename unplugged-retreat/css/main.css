@@ -116,6 +116,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.875em;
+    margin: 0;
 }
  
 h3, 
@@ -324,15 +325,17 @@ input[type=button] {
     flex-flow: row wrap;
 }
 
-.features p {
-    text-align: center;
-    margin: 0;
-}
-
 .features i {
     font-size: 3.75em;
     margin-bottom: 40px;
 }
+
+.features p {
+    text-align: center;
+    margin: 0;
+}
+ 
+/* Reviews */
 
 .reviews {
     background-color: #2a423a;
@@ -411,7 +414,6 @@ input[type=button] {
 }
 
 .faq h2 {
-    width:  100%;
     margin-bottom: 40px;
     line-height: 1;
 }
@@ -424,7 +426,6 @@ input[type=button] {
 }
  
 
-  /* -------------------- FAQ -------------------- */
 
  /* ==========================================================================
    Helper classes
@@ -540,8 +541,9 @@ header {
 }
  
 header .content-wrapper {
-    justify-content: space-between;
     width: 100%;
+    justify-content: space-between;
+
 }
  
 header figure {
@@ -603,6 +605,10 @@ aside .content-wrapper .form {
 .features .features-item-description {
     width: 62%;
 }
+
+.features i {
+    margin-bottom: 30px;
+}
  
 /* Reviews */
 .reviews article {
@@ -613,15 +619,15 @@ aside .content-wrapper .form {
 .reviews h2 {
     width: 85;
 }
-
-.reviews h3 {
-    width: 75%;
-    margin: 0;
-}
     
 .reviews article figure,
 .reviews article div {
     width: 49%;     
+}
+
+.reviews h3 {
+    width: 75%;
+    margin: 0;
 }
  
 /* Footer */
@@ -630,7 +636,7 @@ footer .content-wrapper {
     margin: 100px 0;
 }
     
-.footer-content {
+footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -813,11 +819,11 @@ footer .copyright {
 }
 
 
-@media only screen and (min-width: 35em) {
+/*@media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
+/*@media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
@@ -837,6 +843,7 @@ footer .copyright {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
