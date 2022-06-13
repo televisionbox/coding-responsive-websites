@@ -543,7 +543,6 @@ header {
 header .content-wrapper {
     width: 100%;
     justify-content: space-between;
-
 }
  
 header figure {
@@ -578,7 +577,7 @@ header nav ul {
 aside .content-wrapper {
     margin: 50px 0;
     display: flex;
-    justify-content: center;
+    justify-content: spce-between;
     flex-flow: row wrap;
 }
  
